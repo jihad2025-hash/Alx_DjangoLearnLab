@@ -1,6 +1,11 @@
+# Update operation in Django shell
+
 ```python
-book = Book.objects.get(title="1984")
+from bookshelf.models import Book
+
+book = Book.objects.first()
 book.title = "Nineteen Eighty-Four"
 book.save()
+
 print(book.title)
 # Output: Nineteen Eighty-Four
