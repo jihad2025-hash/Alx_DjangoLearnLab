@@ -3,10 +3,10 @@
 ```python
 from bookshelf.models import Book
 
-# Retrieve the first book
-book = Book.objects.first()
+# Retrieve the book using get
+book = Book.objects.get(title="1984")
 
 # Print book details
-print(book.title)
+print(book.title)  # Output: 1984
 print(book.author)
 print(book.publication_year)
