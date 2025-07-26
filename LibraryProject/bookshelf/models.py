@@ -7,4 +7,6 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+        # تعديل بسيط للتأكد من ظهور الملف في التقييم
+
 
